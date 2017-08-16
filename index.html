@@ -7,17 +7,28 @@
     <title>Form</title>
 </head>
 <body>
-    <form method="POST" action="https://formspree.io/andriyhischynskyy@gmail.com">>
-    <title>Interrogation</title>       
-        <lable>That fattiness you prefer <br>
-            <input type="radio" name="Not drink" value="I do not drink milk" checked> I do not drink milk <br> 
-            <input type="radio" name="0%" value="0%">  0% of fat <br> 
-            <input type="radio" name="1,5%" value="1,5%"> 1,5% of fat <br>
-            <input type="radio" name="3,2%" value="3,2%">  3,2% of fat 
-        </lable> 
+    <form method="POST" action="https://formspree.io/andriyhischynskyy@gmail.com">
+    <h2>Interrogation</h2>       
+        <label>That fattiness you prefer</label>
+        <label>
+            <input type="radio" name="fattiness" value="I do not drink milk" checked>  
+            I do not drink milk        
+        </label>
+        <label>
+            <input type="radio" name="fattiness" value="0%">  
+            0% of fat
+        </label> 
+        <label>
+            <input type="radio" name="fattiness" value="1,5%"> 
+            1,5% of fat
+        </label>
+        <label>
+            <input type="radio" name="fattiness" value="3,2%">   
+            3,2% of fat
+        </label> 
         <br>
         <label> Consumption per week 0
-            <input type="range" name"liters-per-week" min="0" max="25" title="liters per week"> 25            
+            <input type="range" name="liters-per-week" min="0" max="25" title="liters per week"> 25            
         </label>    
         <br>
         <label>Select the most important factors for you: <br>
@@ -28,7 +39,7 @@
         </label>
         <br>
         <label>Your income
-            <input type="number" name="incom" min="0" placeholder="UAN per mounth">  
+            <input type="number" name="incom" min="0" placeholder="UAH per mounth">  
         </label>
         <br>
         <label> Your full name
@@ -37,11 +48,13 @@
         <label> age
             <input type="number" name="age" min="0" max="120"  required>
         </label>
-        <label> male
-            <input type="radio" name="sex" value="male"> 
+        <label> 
+            <input type="radio" name="gender" value="male"> 
+            male        
         </label>
-        <label> female
-            <input type="radio" name="sex" value="female"> 
+        <label> 
+            <input type="radio" name="gender" value="female">
+            female
         </label>
         <br>
         <label>Phone
@@ -49,11 +62,12 @@
         </label>
         <br>
         <label>E-Mail
-            <input type="email" name="user-email" placeholder="your email address@">
+            <input type="email" name="user-email" placeholder="your@emailaddress">
         </label>
         <br>
             <input type="submit">
             <input type="reset">
+    </form>        
     <a href="table.html">Table</a>
 </body>
 </html>
